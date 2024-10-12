@@ -1,0 +1,30 @@
+cd C:\xamp\mysql\bin
+
+mysql -u root -p
+
+show databases;
+
+create database filmes;
+
+use filmes;
+
+create table cliente(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    cpf VARCHAR(14),
+    telefone VARCHAR(15),
+    email VARCHAR(100)
+);
+
+INSERT INTO cliente (nome, email, telefone, cpf) VALUES 
+('Bruno', 'bruno@teste.com', '41 912345671', '123.456.789-00'),
+('Jeferson', 'jeferson@teste.com', '41 912345672', '123.456.789-01'),
+('Guilherme', 'guilherme@teste.com', '41 912345673', '123.456.789-02'),
+('Lucas', 'lucas@teste.com', '41 912345674', '123.456.789-03'),
+('Gabriel', 'gabriel@teste.com', '41 912345675', '123.456.789-04'),
+('Fernanda', 'fernanda@teste.com', '41 912345676', '123.456.789-05'),
+('Eduardo', 'eduardo@teste.com', '41 912345677', '123.456.789-06'),
+('Carla', 'carla@teste.com', '41 912345678', '123.456.789-07'),
+('Juliana', 'juliana@teste.com', '41 912345679', '123.456.789-08'),
+('Helena', 'helena@teste.com', '41 912345680', '123.456.789-09'),
+('Igor', 'igor@teste.com', '41 912345681', '123.456.789-10');
